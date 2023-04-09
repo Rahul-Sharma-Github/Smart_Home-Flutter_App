@@ -11,7 +11,7 @@ class _HomePageCardsState extends State<HomePageCards> {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      flex: 3,
+      flex: 2,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 35.0, vertical: 10.0),
         child: Column(

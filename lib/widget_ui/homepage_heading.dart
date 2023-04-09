@@ -12,7 +12,7 @@ class _HomePageHeadingState extends State<HomePageHeading> {
   Widget build(BuildContext context) {
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 35.0, vertical: 10.0),
+        padding: const EdgeInsets.symmetric(horizontal: 35.0, vertical: 0.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
