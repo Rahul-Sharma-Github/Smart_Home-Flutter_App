@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:percent_indicator/percent_indicator.dart';
+import 'package:practice/temperature_page.dart';
 
 class HomePageTemperature extends StatefulWidget {
   const HomePageTemperature({super.key});
@@ -80,13 +81,28 @@ class _HomePageTemperatureState extends State<HomePageTemperature> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
-                  child: LinearPercentIndicator(
-                    padding: const EdgeInsets.all(0.0),
-                    percent: 0.35,
-                    lineHeight: 45.0,
-                    barRadius: const Radius.circular(20.0),
-                    animation: true,
-                    animationDuration: 1000,
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const TempPage(),
+                        ),
+                      );
+                    },
+                    child: LinearPercentIndicator(
+                      linearGradient: const LinearGradient(
+                        begin: Alignment.centerLeft,
+                        end: Alignment.centerRight,
+                        colors: [Colors.pinkAccent, Colors.pink],
+                      ),
+                      padding: const EdgeInsets.all(0.0),
+                      percent: 0.35,
+                      lineHeight: 45.0,
+                      barRadius: const Radius.circular(20.0),
+                      animation: true,
+                      animationDuration: 1000,
+                    ),
                   ),
                 ),
               ],

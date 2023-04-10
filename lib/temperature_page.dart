@@ -13,7 +13,6 @@ class _TempPageState extends State<TempPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFe2edf7),
       body: SafeArea(
           child: Column(
         children: [
@@ -181,7 +180,7 @@ class _TempPageState extends State<TempPage> {
                             animationDuration: Duration(seconds: 1),
                             height: 590.0,
                             width: 50.0,
-                            color: [Colors.redAccent, Colors.lightGreen],
+                            color: [Colors.pink, Colors.pinkAccent],
                           ),
                         ),
                       ],
