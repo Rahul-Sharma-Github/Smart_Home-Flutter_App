@@ -14,7 +14,8 @@ class _HomePageTemperatureState extends State<HomePageTemperature> {
   Widget build(BuildContext context) {
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.only(left: 35.0, right: 35.0, top: 20.0),
+        padding: const EdgeInsets.only(
+            left: 35.0, right: 35.0, top: 10.0, bottom: 20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -65,7 +66,7 @@ class _HomePageTemperatureState extends State<HomePageTemperature> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           Text(
-                            '20 C',
+                            '35° C',
                             style: TextStyle(
                                 fontSize: 32.0, color: Colors.grey[700]),
                           ),
@@ -81,9 +82,11 @@ class _HomePageTemperatureState extends State<HomePageTemperature> {
                 Expanded(
                   child: LinearPercentIndicator(
                     padding: const EdgeInsets.all(0.0),
-                    percent: 0.4,
+                    percent: 0.35,
                     lineHeight: 45.0,
                     barRadius: const Radius.circular(20.0),
+                    animation: true,
+                    animationDuration: 1000,
                   ),
                 ),
               ],

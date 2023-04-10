@@ -13,7 +13,8 @@ class _HomePageCardsState extends State<HomePageCards> {
     return Expanded(
       flex: 2,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 35.0, vertical: 10.0),
+        padding: const EdgeInsets.only(
+            left: 35.0, right: 35.0, top: 0.0, bottom: 30.0),
         child: Column(
           children: [
             Expanded(

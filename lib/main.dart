@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practice/home_page.dart';
+import 'package:practice/temperature_page.dart';
 
 void main() {
   runApp(const MyApp());

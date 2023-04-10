@@ -11,7 +11,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 35.0, vertical: 20.0),
+      padding: const EdgeInsets.symmetric(horizontal: 35.0, vertical: 0.0),
       child: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         iconSize: 30.0,
@@ -23,8 +23,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
         currentIndex: 0,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings_outlined),
-            label: 'Settings',
+            icon: Icon(Icons.home_outlined),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outline_outlined),
