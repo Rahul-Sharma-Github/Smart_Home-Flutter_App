@@ -28,7 +28,7 @@ class _TempPageState extends State<TempPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Row(
-                          children: [
+                          children: const [
                             Text(
                               'Temperature',
                               style: TextStyle(
@@ -37,7 +37,7 @@ class _TempPageState extends State<TempPage> {
                           ],
                         ),
                         Row(
-                          children: [
+                          children: const [
                             Text('Control the Temperature'),
                           ],
                         ),
@@ -62,7 +62,7 @@ class _TempPageState extends State<TempPage> {
                               const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
+                            children: const [
                               Icon(Icons.sunny),
                               Text('  43° C  Outside'),
                             ],
@@ -83,7 +83,7 @@ class _TempPageState extends State<TempPage> {
                                 ),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
+                                  children: const [
                                     Icon(
                                       Icons.battery_charging_full_rounded,
                                       color: Colors.white,
@@ -106,7 +106,7 @@ class _TempPageState extends State<TempPage> {
                                 ),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
+                                  children: const [
                                     Icon(
                                       Icons.sunny_snowing,
                                       color: Colors.black,
@@ -126,7 +126,7 @@ class _TempPageState extends State<TempPage> {
                                 ),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
+                                  children: const [
                                     Icon(
                                       Icons.timer_outlined,
                                       color: Colors.black,
@@ -146,7 +146,7 @@ class _TempPageState extends State<TempPage> {
                                 ),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
+                                  children: const [
                                     Icon(
                                       Icons.electric_bolt_outlined,
                                       color: Colors.black,
